@@ -1,18 +1,46 @@
 import React from "react";
+import Webcovid2 from "../../assets/webcovid2.png";
 
-const Projets = ({
-
-}) => {
-    return (
-        <div style={{ backgroundColor: '#171718', minHeight: '50vh' }} id='projects'>
-            <h1 style={{ color: '#fff', textAlign: 'center', }}>Proyectos</h1>
-            <div style={{ display: 'flex', color: '#47D16E', textAlign: 'center' }}>
-                <h1 style={{ textAlign: 'center', margin: 'auto', paddingTop: '5%' }}>Proximamente</h1>
-                {/* <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4Yi6ldcrjUYSo6uGOyBjp1lupyD6kPW59CA&usqp=CAU" style={{ borderRadius: '25px', height: '30vh', border: '3px solid #47D16E' }} className='cardProject' /> */}
-            </div>
+const Projets = ({}) => {
+  return (
+    <div
+      style={{ backgroundColor: "#171718", minHeight: "90vh", marginTop: "2%" }}
+      id="projects"
+    >
+      <h1 style={{ color: "#fff", textAlign: "center" }}>Proyectos</h1>
+      <div
+        style={{
+          display: "flex",
+          color: "#47D16E",
+          textAlign: "center",
+          justifyContent: "space-around",
+        }}
+      >
+        <div style={{ display: "flex", marginTop: "3%" }} className="carrousel">
+          <div className="cardAbilitie" style={{ width: "450px" }}>
+            <img
+              src={Webcovid2.src}
+              style={{ width: "90%", margin: "5%", borderRadius: "25px" }}
+            />
+            <a
+              href="https://covid19-cv.netlify.app/"
+              style={{
+                color: "#fff",
+                textAlign: "center",
+                fontSize: "1.5em",
+                marginBottom: "3%",
+              }}
+              target="_blank"
+            >
+              Web Covid
+              <br />
+              HTML - CSS - JavaScript
+            </a>
+          </div>
         </div>
-
-    )
-}
+      </div>
+    </div>
+  );
+};
 
 export default Projets;
