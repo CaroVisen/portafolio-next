@@ -31,6 +31,7 @@ const Projets = ({}) => {
                 marginBottom: "3%",
               }}
               target="_blank"
+              rel="noopener noreferrer"
             >
               Web Covid
               <br />
