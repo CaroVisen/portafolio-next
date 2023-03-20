@@ -1,5 +1,5 @@
 import React from "react";
-import Webcovid2 from "../../assets/webcovid2.png";
+import Webcovid2 from "../../../public/Webcovid2.png";
 
 const Projets = ({}) => {
   return (
